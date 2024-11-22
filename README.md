@@ -2,7 +2,7 @@
 
 A modern web application for discovering, tracking, and managing your reading journey. BookHub provides a seamless experience for book lovers to explore, save, and track their reading progress.
 
-![BookHub Home Page](./screenshots/home.png)
+![image](https://github.com/user-attachments/assets/c13254b5-0027-4800-882b-676de869cb0c)
 
 ## ✨ Features
 
