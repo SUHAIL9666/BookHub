@@ -1,5 +1,6 @@
 const API_KEY = 'AIzaSyBfzDZG4aE5HnxTslR6Fy19DHVMFg-Twe4';
 const BASE_URL = 'https://www.googleapis.com/books/v1';
+<<<<<<< HEAD
 const GOOGLE_BOOKS_API = 'https://www.googleapis.com/books/v1/volumes';
 
 export interface SearchResponse {
@@ -30,6 +31,14 @@ export async function searchBooksByGenre(genre: string, maxResults: number = 20)
     console.error('Error searching books by genre:', error);
     return { items: [], totalItems: 0 };
   }
+=======
+
+export async function searchBooks(query: string) {
+  const response = await fetch(
+    `${BASE_URL}/volumes?q=${encodeURIComponent(query)}&key=${API_KEY}`
+  );
+  return response.json();
+>>>>>>> a27dbe6688d1b56c400df5fcc62266b77dad7307
 }
 
 export async function getTrendingBooks() {
